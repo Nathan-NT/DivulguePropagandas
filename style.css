@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Berkshire+Swash&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-family: 'Poppins';
+}
+
+header span {
+    color: #dc3545;
+}
+
+header .nav-primaria {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .nav-primaria li a {
+    font-family: 'Poppins';
+    padding: 10px;
+    color: black;
+    font-size: 1.0rem;
+    transition: all .4s;
+}
+
+header .nav-primaria li a:hover {
+    color: #dc3545;
+}
+
+
+/*SEÇÃO PROPOSTA*/
+
+.section-div {
+    color: white;
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 60px;
+    padding: 60px;
+}
+
+.section-div .img-carro {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.section-div div .slogan {
+    margin-bottom: 30px;
+}
+
+.section-div .digitando {
+    font-size: 3rem;
+}
+
+.section-div div p {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.button-proposta a {
+    display: flex;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 60px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    background-color: #00FF7F;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s; 
+}
+
+.button-proposta a:hover {
+    background-color: #00b65a;
+    transform: scale(1.1);
+}
+
+/* SEÇÃO VIDEO*/
+
+.section-video {
+    background-color: white;
+}
+
+.section-video div h1{
+    display: flex;
+    font-family: 'Poppins';
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.section-video .publi-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+}
+
+.section-video .video-publi {
+    padding-left: 140px;
+}
+
+.section-video .publi-descricao{
+    padding-left: 30px;
+    font-family: 'Poppins';
+}
+
+.section-video .publi-descricao h2{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.section-video .publi-descricao p {
+    padding-bottom: 30px;
+    width: 30rem;
+}
+
+/* SEÇÃO SERVIÇOS*/
+
+.section-servicos {
+    display: grid;
+    justify-items: center;
+    background-color: white;
+}
+
+.section-servicos h1 {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Poppins';
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.section-servicos .itens-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.section-servicos .itens-servicos h2 {
+    max-width: 300px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    flex-wrap: wrap;
+}
+
+.section-servicos .itens-servicos div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.section-servicos .itens-servicos #carrosom {
+    padding-bottom: 50px;
+}
+
+
+/* SEÇÃO CATEGORIA*/
+
+
+.itens-segmentos {
+    display: grid;
+    justify-items: center;
+}
+
+.itens-segmentos div{
+    color: white;
+    text-align: center;
+}
+
+.itens-segmentos div h2{
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+
+.itens-segmentos div p{
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    max-width: 1200px;
+    
+}
+
+.categoria-seg {
+    max-width: 1000px;
+}
+
+.segmentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.segmentos div {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.segmentos div p{
+    font-size: 20px;
+}
+
+
+/* SEÇÃO SOBRE NÓS*/
+
+.section-sobre {
+    display: flex;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins';
+}
+
+.sobre-nos {
+    margin-left: 130px;
+}
+
+.sobre-nos h2 {
+    font-size: 3rem;
+}
+
+.sobre-nos p {
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 700px;
+}
+
+
+.section-contato {
+    background-color: black;
+    color: white;
+}
+
+.section-contato h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.whatsapp h2 {
+    font-size: 2rem;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}
+
+.button-whatsapp a {
+    display: flex;
+    padding: 25px;
+    margin-bottom: 30px;
+    width: 300px;
+    color: black;
+    justify-content: center;
+    background-color: #00FF7F;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;   
+}
+
+.button-whatsapp button:hover {
+    background-color: #00b65a;
+    transform: scale(1.1);
+}
+
+.telefone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+.telefone h2 {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-telefone p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-telefone a {
+    color: white;
+}
+
+.form-contato {
+    margin-right: 100px;
+}
+
+.form-contato h2 {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form label {
+    font-family: 'Poppins';
+
+}
+
+.form input {
+    background-color: #fff;
+    height: 38px;
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    max-width: 400px;
+}
+
+.form textarea {
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    min-width: 400px;
+    max-width: 400px;
+    height: 100px;
+}
+
+.button-ligamos {
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    font-family: 'Poppins';
+    color: #333;
+    font-size: 1em;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+}
+
+.button-ligamos:hover {
+    background-color: #c4c4c4;
+}
+
+
+.footer-div {
+    padding: 0px 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.625rem;
+    line-height: 1rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
