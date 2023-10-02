@@ -217,7 +217,222 @@ nav ul li a:hover {
     background-color: #00af17;
 }
 
+
+
+/*--------------------------------------------SEÇÃO CATEGORIAS--------------------------------------------*/
+
+.section-categoria {
+    width: 100%;
+}
+
+.container-categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.segmentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item-seg {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.itens-title {
+    width: 1250px;
+}
+
+.itens-title h2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+}
+
+.itens-title p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+/*--------------------------------------------SEÇÃO SOBRE--------------------------------------------*/
+
+.section-sobre {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(255,255,255,1) 100%);
+    color: white;
+    height: 500px;
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-nos h2 {
+    font-size: 3rem;
+    padding: 50px 0 25px 0;
+}
+
+.sobre-nos p {
+    font-size: 1.5rem;
+    padding: 0 100px 25px 100px;
+    text-align: justify;
+}
+
+/*--------------------------------------------SEÇÃO CONTATO--------------------------------------------*/
+
+.section-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+}
+
+.section-contato h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 3rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+    padding-top: 50px;
+    width: 100%;
+    gap: 80px;
+}
+
+.item-contato {
+    text-align: center;
+}
+
+.whatsapp h3 {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+}
+
+.button-whatsapp {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-whatsapp a{
+    background-color: #5CB85C;
+    padding: 15px 55px 15px 55px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: white;
+    transition: .5s;
+}
+
+.button-whatsapp a:hover {
+    background-color: #4e9c4e;
+}
+
+.telefone h3 {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+}
+
+.button-telefone ul li a{
+    color: black;
+    font-weight: 600;
+}
+
+.button-telefone ul li{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.form-contato h3 {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.form label {
+    text-align: left;
+}
+
+.form textarea {
+   padding: 6px 10px;
+   resize: vertical;
+   min-height: 50px;
+   max-height: 150px;
+   font-family: 'Poppins';
+}
+
+.form button {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 15px;
+    margin-top: 15px;
+    transition: all .5s;
+    margin-bottom: 25px;
+}
+
+.form button:hover {
+    background-color: #b3b3b3;
+}
+
+/*--------------------------------------------FOOTER--------------------------------------------*/
+
+footer {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(255,255,255,1) 100%);
+    color: white;
+}
+
+.footer-div {
+    text-align: center;
+    font-size: 'Poppins';
+    font-size: 10px;
+    padding: 20px 35px 20px 35px;
+}
+
 /*--------------------------------------------MEDIA--------------------------------------------*/
+
+@media (max-width: 1280px) {
+    .itens-title {
+        width: auto;
+    }
+
+    .sobre-nos p {
+        font-size: 1.5rem;
+        padding: 10px;
+        text-align: justify;
+    }
+}
 
 /*---------------------1080----------------------*/
 
@@ -240,6 +455,12 @@ nav ul li a:hover {
 @media (max-width: 1024px){
     .section-principal {
         height: 530px;
+    }
+    .button-telefone ul li {
+        font-size: 25px;
+    }
+    .section-contato {
+        height: auto;
     }
 }
 
@@ -322,8 +543,11 @@ nav ul li a:hover {
         align-items: center;
     }
 
-
-
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px 0 50px;
+    }
 }
 
 /*-------------------------------------------*/
@@ -345,6 +569,14 @@ nav ul li a:hover {
      .img-carro {
         margin-top: 0px;
         margin-bottom: 50px;  
+    }
+
+    .segmentos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sobre-nos p {
+        font-size: 1rem;
     }
 
 }
@@ -372,6 +604,10 @@ nav ul li a:hover {
     .video-publi iframe {
         width: 452px;
         height: 250px;
+    }
+
+    .footer-div {
+        font-size: 6px;
     }
 }
 
@@ -423,6 +659,17 @@ nav ul li a:hover {
         font-size: 40px;
     }
 
+    .itens-title h2 {
+        font-size: 25px;
+    }
+    .itens-title p {
+        font-size: 20px;
+    }
+
+    .section-contato h1 {
+        font-size: 2rem;
+    }
+
 }
 
 /*-------------------------------------------*/
@@ -440,8 +687,8 @@ nav ul li a:hover {
     }
 
     .video-publi iframe {
-        width: 370px;
-        height: 230px;
+        width: 350px;
+        height: 200px;
         margin-bottom: -50px;
     }
 
@@ -456,6 +703,8 @@ nav ul li a:hover {
     .publi-descricao ul li {
         font-size: 13px;
     }
+
+   
 }
 
 /*-------------------------------------------*/
@@ -491,6 +740,10 @@ nav ul li a:hover {
     .video-publi iframe {
         width: 310px;
         height: 190px;
+    }
+
+    .section-sobre {
+        height: 570px;
     }
 
 }
