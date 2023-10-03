@@ -569,9 +569,10 @@ footer {
         flex-direction: column;
         gap: 0;
         text-align: center;
+        margin-top: 50px;
     }
     .section-principal {
-        height: 650px;
+        height: 690px;
     }
     .img-carro img {
         width: 300px;      
@@ -597,7 +598,7 @@ footer {
 
 @media (max-width: 580px){
     .section-principal {
-        height: 720px;
+        height: 780px;
     }
 
     .section-servicos {
@@ -637,7 +638,7 @@ footer {
         padding-left: 50px;
     }
     .section-principal {
-        height: 730px;
+        height: 770px;
     }
 
     .video-publi iframe {
@@ -693,13 +694,12 @@ footer {
     }
 
     .section-principal {
-        height: 770px;
+        height: 810px;
     }
 
     .video-publi iframe {
         width: 350px;
         height: 200px;
-        margin-bottom: -50px;
     }
 
     .section-video div h1 {
@@ -728,7 +728,7 @@ footer {
     }
 
     .section-principal {
-        height: 570px;
+        height: 650px;
     }
 
     .titles h1 {
