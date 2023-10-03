@@ -55,7 +55,8 @@ nav ul li a:hover {
     transition: .5s;
 }
 
-.checkbtn {
+label #btn,
+label #cancel {
     font-size: 30px;
     float: right;
     line-height: 80px;
@@ -486,13 +487,16 @@ footer {
 /*---------------------858----------------------*/
 
 @media (max-width: 858px) {
-    .checkbtn {
+    label #btn {
         display: block;
         transition: .5s;
     }
     .checkbtn:hover {
         color: #dc3545;
 
+    }
+    nav {
+        position: fixed;
     }
     nav ul li a {
         color: white;
@@ -522,6 +526,12 @@ footer {
     }
     #check:checked ~ ul {
         left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
     }
 
     .publi-info {
